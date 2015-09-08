@@ -1,0 +1,114 @@
+[submodule "arkanae3_2d"]
+	path = arkanae3_2d
+	url = ssh://aur@aur.archlinux.org/arkanae3_2d.git
+[submodule "balazarbrothers"]
+	path = balazarbrothers
+	url = ssh://aur@aur.archlinux.org/balazarbrothers.git
+[submodule "diakonos"]
+	path = diakonos
+	url = ssh://aur@aur.archlinux.org/diakonos.git
+[submodule "downpour"]
+	path = downpour
+	url = ssh://aur@aur.archlinux.org/downpour.git
+[submodule "drpython"]
+	path = drpython
+	url = ssh://aur@aur.archlinux.org/drpython.git
+[submodule "jflex"]
+	path = jflex
+	url = ssh://aur@aur.archlinux.org/jflex.git
+[submodule "kdelibs3"]
+	path = kdelibs3
+	url = ssh://aur@aur.archlinux.org/kdelibs3.git
+[submodule "mwlib.ext"]
+	path = mwlib.ext
+	url = ssh://aur@aur.archlinux.org/mwlib.ext.git
+[submodule "mwlib"]
+	path = mwlib
+	url = ssh://aur@aur.archlinux.org/mwlib.git
+[submodule "mwlib.rl"]
+	path = mwlib.rl
+	url = ssh://aur@aur.archlinux.org/mwlib.rl.git
+[submodule "parallel-python"]
+	path = parallel-python
+	url = ssh://aur@aur.archlinux.org/parallel-python.git
+[submodule "python2-blist"]
+	path = python2-blist
+	url = ssh://aur@aur.archlinux.org/python2-blist.git
+[submodule "python2-cerealizer"]
+	path = python2-cerealizer
+	url = ssh://aur@aur.archlinux.org/python2-cerealizer.git
+[submodule "python2-errorhandler"]
+	path = python2-errorhandler
+	url = ssh://aur@aur.archlinux.org/python2-errorhandler.git
+[submodule "python2-mongokit"]
+	path = python2-mongokit
+	url = ssh://aur@aur.archlinux.org/python2-mongokit.git
+[submodule "python2-odfpy"]
+	path = python2-odfpy
+	url = ssh://aur@aur.archlinux.org/python2-odfpy.git
+[submodule "python2-roman"]
+	path = python2-roman
+	url = ssh://aur@aur.archlinux.org/python2-roman.git
+[submodule "python2-simpletal"]
+	path = python2-simpletal
+	url = ssh://aur@aur.archlinux.org/python2-simpletal.git
+[submodule "python2-storm"]
+	path = python2-storm
+	url = ssh://aur@aur.archlinux.org/python2-storm.git
+[submodule "python-blist"]
+	path = python-blist
+	url = ssh://aur@aur.archlinux.org/python-blist.git
+[submodule "python-cerealizer"]
+	path = python-cerealizer
+	url = ssh://aur@aur.archlinux.org/python-cerealizer.git
+[submodule "python-fixtures"]
+	path = python-fixtures
+	url = ssh://aur@aur.archlinux.org/python-fixtures.git
+[submodule "python-fudge-docs"]
+	path = python-fudge-docs
+	url = ssh://aur@aur.archlinux.org/python-fudge-docs.git
+[submodule "python-fudge"]
+	path = python-fudge
+	url = ssh://aur@aur.archlinux.org/python-fudge.git
+[submodule "python-geniusql-svn"]
+	path = python-geniusql-svn
+	url = ssh://aur@aur.archlinux.org/python-geniusql-svn.git
+[submodule "python-nevow"]
+	path = python-nevow
+	url = ssh://aur@aur.archlinux.org/python-nevow.git
+[submodule "python-parse-docs"]
+	path = python-parse-docs
+	url = ssh://aur@aur.archlinux.org/python-parse-docs.git
+[submodule "python-selenium"]
+	path = python-selenium
+	url = ssh://aur@aur.archlinux.org/python-selenium.git
+[submodule "python-simpletal"]
+	path = python-simpletal
+	url = ssh://aur@aur.archlinux.org/python-simpletal.git
+[submodule "python-timelib"]
+	path = python-timelib
+	url = ssh://aur@aur.archlinux.org/python-timelib.git
+[submodule "python-transaction"]
+	path = python-transaction
+	url = ssh://aur@aur.archlinux.org/python-transaction.git
+[submodule "ruby-metaclass"]
+	path = ruby-metaclass
+	url = ssh://aur@aur.archlinux.org/ruby-metaclass.git
+[submodule "ruby-mocha"]
+	path = ruby-mocha
+	url = ssh://aur@aur.archlinux.org/ruby-mocha.git
+[submodule "ruby-puppet-syntax"]
+	path = ruby-puppet-syntax
+	url = ssh://aur@aur.archlinux.org/ruby-puppet-syntax.git
+[submodule "wikkid-bzr"]
+	path = wikkid-bzr
+	url = ssh://aur@aur.archlinux.org/wikkid-bzr.git
+[submodule "wok"]
+	path = wok
+	url = ssh://aur@aur.archlinux.org/wok.git
+[submodule "xsv-git"]
+	path = xsv-git
+	url = ssh://aur@aur.archlinux.org/xsv-git.git
+[submodule "python-ftputil"]
+	path = python-ftputil
+	url = ssh+git://aur@aur.archlinux.org/python-ftputil.git
