@@ -1,0 +1,104 @@
+#!/usr/bin/env python3
+
+import json
+from urllib.request import urlopen
+import sys
+import subprocess
+import functools
+import os
+import os.path
+import argparse
+import logging
+from logging import error, debug
+
+
+parser = argparse.ArgumentParser("Check PyPi from a package list")
+parser.add_argument("--pyfile", default="PYPI_PACKAGES",
+                    type=argparse.FileType('r'),
+                    help="list file")
+parser.add_argument("--gemsfile", default="GEMS",
+                    type=argparse.FileType('r'),
+                    help="list file")
+parser.add_argument("--verbose", "-v", action="store_true")
+parser.add_argument("packages", nargs="*",
+                    help="List of included packages, defaults to all")
+
+
+def read_package_list(file):
+    packages = []
+    with file:
+        for line in file:
+            name, pkgbuild = line.rstrip().split(' ')
+            debug("Read package %s -> %s", name, pkgbuild)
+            packages.append((name, pkgbuild))
+    return packages
+
+
+@functools.lru_cache(maxsize=None)
+def get_pypi_version(pkg):
+    url = "http://pypi.python.org/pypi/%s/json" % pkg
+    debug("Request to %s", url)
+    data = json.loads(urlopen(url).read().decode('utf8'))
+    return data['info']['version']
+
+
+@functools.lru_cache(maxsize=None)
+def get_gem_version(pkg):
+    url = "https://rubygems.org/api/v1/versions/{}/latest.json".format(pkg)
+    debug("Request to %s", url)
+    data = json.loads(urlopen(url).read().decode('utf8'))
+    return data['version']
+
+
+def get_pkgbuild_version(file_name):
+    debug("Parsing PKGBUILD at %s", file_name)
+    if not os.path.exists(file_name):
+        error("%s is missing", file_name)
+        return
+    script = """
+source {}
+printf '%s' "$pkgver"
+""".format(file_name)
+    output = subprocess.check_output(['/bin/bash'],
+                                     input=script.encode('ascii'))
+    output = output.decode('utf8')
+    debug("PKGBUILD version is at %s", output)
+    return output
+
+
+def main():
+    args = parser.parse_args()
+    if args.verbose:
+        logging_level = logging.DEBUG
+    else:
+        logging_level = logging.ERROR
+
+    logging.basicConfig(
+        format="%(message)s",
+        level=logging_level,
+        stream=sys.stderr,
+    )
+
+    pypi_packages = read_package_list(args.pyfile)
+    gems = read_package_list(args.gemsfile)
+    limits = set(args.packages)
+
+    output_diff(pypi_packages, limits, get_pypi_version)
+    output_diff(gems, limits, get_gem_version)
+
+
+def output_diff(packages, limits, get_versions_callback):
+    for name, pkgbuild in packages:
+        if limits and name not in limits:
+            continue
+        if not pkgbuild.endswith("PKGBUILD"):
+            pkgbuild = os.path.join(pkgbuild, "PKGBUILD")
+        pkgbuild_version = get_pkgbuild_version(pkgbuild)
+        current_version = get_versions_callback(name)
+        if pkgbuild_version != current_version:
+            print("%s at %s, latest (%s) at %s" % (pkgbuild,
+                  pkgbuild_version, name, current_version))
+
+
+if __name__ == '__main__':
+    main()
