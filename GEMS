@@ -1,3 +1,4 @@
 metaclass ruby-metaclass
 mocha ruby-mocha
 puppet-syntax ruby-puppet-syntax
+rspec ruby-rspec

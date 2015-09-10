@@ -112,3 +112,6 @@
 [submodule "python-ftputil"]
 	path = python-ftputil
 	url = ssh+git://aur@aur.archlinux.org/python-ftputil.git
+[submodule "ruby-rspec"]
+	path = ruby-rspec
+	url = ssh+git://aur@aur.archlinux.org/ruby-rspec.git
