@@ -112,18 +112,3 @@
 [submodule "python-ftputil"]
 	path = python-ftputil
 	url = ssh+git://aur@aur.archlinux.org/python-ftputil.git
-[submodule "ruby-rspec"]
-	path = ruby-rspec
-	url = ssh+git://aur@aur.archlinux.org/ruby-rspec.git
-[submodule "ruby-rspec-core"]
-	path = ruby-rspec-core
-	url = ssh+git://aur@aur.archlinux.org/ruby-rspec-core.git
-[submodule "ruby-rspec-mocks"]
-	path = ruby-rspec-mocks
-	url = ssh+git://aur@aur.archlinux.org/ruby-rspec-mocks.git
-[submodule "ruby-rspec-expectations"]
-	path = ruby-rspec-expectations
-	url = ssh+git://aur@aur.archlinux.org/ruby-rspec-expectations.git
-[submodule "ruby-rspec-support"]
-	path = ruby-rspec-support
-	url = ssh+git://aur@aur.archlinux.org/ruby-rspec-support.git
