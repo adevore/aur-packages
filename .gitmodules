@@ -109,3 +109,6 @@
 [submodule "python-ftputil"]
 	path = python-ftputil
 	url = ssh+git://aur@aur.archlinux.org/python-ftputil.git
+[submodule "python2-sqlite3dbm"]
+	path = python2-sqlite3dbm
+	url = ssh://aur@aur.archlinux.org/python2-sqlite3dbm.git
