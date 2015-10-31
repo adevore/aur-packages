@@ -112,3 +112,6 @@
 [submodule "python2-sqlite3dbm"]
 	path = python2-sqlite3dbm
 	url = ssh://aur@aur.archlinux.org/python2-sqlite3dbm.git
+[submodule "python2-qserve"]
+	path = python2-qserve
+	url = ssh://aur@aur.archlinux.org/python2-qserve.git
