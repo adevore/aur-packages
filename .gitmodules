@@ -79,9 +79,6 @@
 [submodule "python-parse-docs"]
 	path = python-parse-docs
 	url = ssh://aur@aur.archlinux.org/python-parse-docs.git
-[submodule "python-selenium"]
-	path = python-selenium
-	url = ssh://aur@aur.archlinux.org/python-selenium.git
 [submodule "python-simpletal"]
 	path = python-simpletal
 	url = ssh://aur@aur.archlinux.org/python-simpletal.git
