@@ -115,3 +115,6 @@
 [submodule "python2-qserve"]
 	path = python2-qserve
 	url = ssh://aur@aur.archlinux.org/python2-qserve.git
+[submodule "dybuk-git"]
+	path = dybuk-git
+	url = ssh://aur@aur.archlinux.org/dybuk-git.git
