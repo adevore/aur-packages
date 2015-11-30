@@ -118,3 +118,6 @@
 [submodule "dybuk-git"]
 	path = dybuk-git
 	url = ssh://aur@aur.archlinux.org/dybuk-git.git
+[submodule "xsv"]
+	path = xsv
+	url = ssh://aur@aur.archlinux.org/xsv.git
