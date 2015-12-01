@@ -13,7 +13,6 @@ fudge python-fudge-docs
 Nevow python-nevow
 parse python-parse-docs
 roman python-roman
-selenium python-selenium
 SimpleTAL python-simpletal
 storm python2-storm
 timelib python-timelib
