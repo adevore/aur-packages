@@ -31,9 +31,6 @@
 [submodule "parallel-python"]
 	path = parallel-python
 	url = ssh://aur@aur.archlinux.org/parallel-python.git
-[submodule "python2-blist"]
-	path = python2-blist
-	url = ssh://aur@aur.archlinux.org/python2-blist.git
 [submodule "python2-cerealizer"]
 	path = python2-cerealizer
 	url = ssh://aur@aur.archlinux.org/python2-cerealizer.git
@@ -55,9 +52,6 @@
 [submodule "python2-storm"]
 	path = python2-storm
 	url = ssh://aur@aur.archlinux.org/python2-storm.git
-[submodule "python-blist"]
-	path = python-blist
-	url = ssh://aur@aur.archlinux.org/python-blist.git
 [submodule "python-cerealizer"]
 	path = python-cerealizer
 	url = ssh://aur@aur.archlinux.org/python-cerealizer.git
