@@ -121,3 +121,6 @@
 [submodule "xsv"]
 	path = xsv
 	url = ssh://aur@aur.archlinux.org/xsv.git
+[submodule "postgresql-tsearch-extras"]
+	path = postgresql-tsearch-extras
+	url = ssh://aur@aur.archlinux.org/postgresql-tsearch-extras.git
