@@ -118,3 +118,6 @@
 [submodule "postgresql-tsearch-extras"]
 	path = postgresql-tsearch-extras
 	url = ssh://aur@aur.archlinux.org/postgresql-tsearch-extras.git
+[submodule "myodbc"]
+	path = myodbc
+	url = ssh://aur@aur.archlinux.org/myodbc.git
